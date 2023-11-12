@@ -1,0 +1,27 @@
+/* Styles form admin login page */
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900&display=swap&subset=arabic');
+body.login .login-container p,
+body.login,
+body.login .login-button:focus, body.login .login-button:hover,
+body.login .login-button{
+	font-family: 'Tajawal', sans-serif;
+}
+body.login{
+	font-size:16px;
+}
+body.login .login-container p{
+	font-size:24px;
+	color: #fe4f00;
+}
+body.login .form-group-default label{
+	font-size:12px;
+}
+body.login .login-button{
+    font-size: 16px;
+    font-weight: 500;
+}
+body.login .login-sidebar{
+	background-image:url(../images/pattern.png);
+	background-repeat:repeat;
+	background-position:left top;
+}

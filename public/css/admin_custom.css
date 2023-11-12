@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900&display=swap&subset=arabic');
+.app-container .content-container .side-menu .navbar-nav li a,
+body, html,
+.breadcrumb a{
+	font-family: 'Tajawal', sans-serif;
+}
+body, html{
+	font-size:15px;
+}
+.page-title{
+	font-size:24px;
+}
+@media (min-width:769px){
+	#voyager-loader{
+		left:auto !important;
+		right:125px;
+	}
+}
+[dir="rtl"] .breadcrumb > li + li:after{
+    float:right;
+}
+.page-content .panel.widget.center.bgimage{
+    min-height:291px;
+}

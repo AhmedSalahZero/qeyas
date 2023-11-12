@@ -1,0 +1,329 @@
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 C:\\laragon\\www\\qeyas\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: Uncaught ReflectionException: Class translator does not exist in C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Container\Container.php:779
+Stack trace:
+#0 C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Container\Container.php(779): ReflectionClass->__construct('translator')
+#1 C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Container\Container.php(658): Illuminate\Container\Container->build('translator')
+#2 C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Container\Container.php(609): Illuminate\Container\Container->resolve('translator', Array)
+#3 C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(759): Illuminate\Container\Container->make('translator', Array)
+#4 C:\laragon\www\qeyas\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(121): Illuminate\Foundation\Application->make('translator', Array)
+#5 Command line code(1): app('translator')
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 1): Uncaught ReflectionException: Class translator does not exist in C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:779
+Stack trace:
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(779): ReflectionClass->__construct('translator')
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(658): Illuminate\\Container\\Container->build('translator')
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(609): Illuminate\\Container\\Container->resolve('translator', Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(759): Illuminate\\Container\\Container->make('translator', Array)
+#4 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(121): Illuminate\\Foundation\\Application->make('translator', Array)
+#5 Command line code(1): app('translator')
+#6 {main}
+  thrown at C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:779)
+[stacktrace]
+#0 {main}
+"} 
+[2023-11-11 19:46:06] local.ERROR: Uncaught Error: Call to undefined method App\Http\Kernel::getRouteMiddleware() in Command line code:1
+Stack trace:
+#0 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 1): Uncaught Error: Call to undefined method App\\Http\\Kernel::getRouteMiddleware() in Command line code:1
+Stack trace:
+#0 {main}
+  thrown at Command line code:1)
+[stacktrace]
+#0 {main}
+"} 
+[2023-11-11 19:46:09] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ {"exception":"[object] (Doctrine\\DBAL\\Driver\\PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:31, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\laragon\\www\\qeyas\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Driver\\PDOConnection.php:27)
+[stacktrace]
+#0 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(67): Doctrine\\DBAL\\Driver\\PDOConnection->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(918): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(901): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(54): Illuminate\\Database\\Connection->getDoctrineConnection()
+#8 C:\\laragon\\www\\qeyas\\vendor\\larapack\\doctrine-support\\src\\DoctrineSupportServiceProvider.php(34): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->addDoctrineTypes(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection))
+#9 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(269): Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider->Larapack\\DoctrineSupport\\{closure}(Object(Larapack\\DoctrineSupport\\Connections\\MySqlConnection), 'qeyas', '', Array)
+#10 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('mysql', Object(Closure), 'qeyas', '', Array)
+#11 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(119): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'mysql')
+#13 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(74): Illuminate\\Database\\DatabaseManager->makeConnection('mysql')
+#14 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php(34): Illuminate\\Database\\DatabaseManager->connection()
+#15 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(144): Illuminate\\Support\\Facades\\Schema::getFacadeAccessor()
+#16 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(231): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#17 C:\\laragon\\www\\qeyas\\app\\Providers\\AppServiceProvider.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('defaultStringLe...', Array)
+#18 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(598): App\\Providers\\AppServiceProvider->register()
+#19 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#20 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(574): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#21 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#22 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\laragon\\www\\qeyas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
